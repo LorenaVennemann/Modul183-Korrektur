@@ -188,6 +188,7 @@ f. Beim sogenannten spoofing wird Netzwerkverkehr mitgelesen. Dies dient der Inf
 
 **Begründung:**  
 Diese Aussage ist Falsch, weil Spoofing bedeutet, sich als eine andere Identität auszugeben, während das Mitlesen von Netzwerkverkehr als Sniffing bezeichnet wird.
+
 ---
 
 ## 📌 Aufgabe 6
