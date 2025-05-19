@@ -417,6 +417,7 @@ f. 	Um die Auswirkungen von irrtümlichem Löschen zu minimieren, kann vor dem L
 
 **Begründung:** 
 Eine Rückfrage hilft zwar, aber sie verhindert nicht alle Fehler. Der Schutz vor Datenverlust erfordert zusätzliche Maßnahmen wie Backups.
+
 ---
 
 ## 📅 Abgabetermin
