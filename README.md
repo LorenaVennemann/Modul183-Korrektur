@@ -68,7 +68,7 @@ b. Wenn Sie Tools fürs Blackbox-Testing suchen, können Sie nach dem Kürzel SA
 **❌ Falsch**
 
 Begründung:
-SAST (Static Application Security Testing) ist ein Whitebox-Ansatz, der den Quellcode analysiert – nicht geeignet für Blackbox-Testing. Für Blackbox-Tests verwendet man DAST (Dynamic Application Security Testing).
+SAST (Static Application Security Testing) ist ein Whitebox-Ansatz, der den Quellcode analysiert, nicht geeignet für Blackbox-Testing. Für Blackbox-Tests verwendet man DAST (Dynamic Application Security Testing).
 
 ---
 
@@ -88,7 +88,8 @@ e. Wenn eine Applikation mit einer API-Schnittstelle via HTTPS kommuniziert, geh
 **❌ Falsch**
 
 **Begründung:**  
-Auch wenn HTTPS Netzwerk-Komponenten nutzt, betrifft die Entscheidung, HTTPS in der API zu verwenden, hauptsächlich die Applikationsebene – also Applikationssicherheit, nicht Netzwerksicherheit.
+Auch wenn HTTPS Netzwerk-Komponenten nutzt, betrifft die Entscheidung, HTTPS in der API zu verwenden, hauptsächlich die Applikationsebene, also Applikationssicherheit, nicht Netzwerksicherheit.
+HTTPS schützt die Datenübertragung, das ist eine sicherheitsrelevante Maßnahme auf Anwendungsebene.
 
 ---
 
@@ -101,9 +102,7 @@ a. Zugriffsrechte auf Produktfotos in einem PIM-System
 ** Datensicherheit**
 
 **Begründung:**  
-Es geht darum, die technischen Zugriffsrechte auf Daten zu regeln – unabhängig davon, ob diese Daten personenbezogen sind. Ziel ist es, unbefugten Zugriff zu verhindern.
-
----
+Es geht darum, die technischen Zugriffsrechte auf Daten zu regeln, unabhängig davon, ob diese Daten personenbezogen sind. Ziel ist es, unbefugten Zugriff zu verhindern. Dabei handelt es sich nicht um personenbezogene Daten, was den Unterschied zur Informationssicherheit deutlich macht.
 
 b. Wurde von mir korrekt beantwortet.
 
@@ -135,7 +134,7 @@ a. Das Dokument Proactive Controlls wurde auch von OWASP herausgegeben und enth�
 **❌ Falsch**
 
 **Begründung:**  
-Das ist falsch, weil die Proactive Controls nicht von OWASP herausgegeben wurden, sondern von einer anderen Organisation oder Quelle stammen.
+Das OWASP-Dokument „Proactive Controls“ ist ein Leitfaden für Entwickler:innen, um Sicherheitsmaßnahmen während des Entwicklungsprozesses umzusetzen. Es enthält 10 zentrale Sicherheitspraktiken und ist eine offizielle OWASP-Publikation.
 
 ---
 
@@ -207,7 +206,7 @@ b. Tool, das es Ihnen erlaubt Netzwerkverkehr zu aufzuzeichnen und zu analysiere
 **Begründung:** 
 Korrekt wäre Wireshark, weil es Netzwerkdaten mitschneidet und sichtbar macht, ohne etwas zu verändern.
 
-Meine Antwort war falsch, da Metasploitable keine Analyse-Software ist, sondern ein absichtlich unsicheres Testsystem – daher ist die ursprüngliche Antwort falsch.
+Beide Tools können Schwachstellenscans machen, aber ZAP ist für automatisierte Scans besonders gut geeignet, während Burp Suite stärker auf manuelle Analyse und Eingriffe ausgerichtet ist.
 
 ---
 
@@ -253,15 +252,15 @@ a. Dank einer Backup-History kann die Vertraulichkeit der Daten gewährleistet w
 Die Backup-History sorgt nur dafür, dass man frühere Versionen von Daten wiederherstellen kann, sie schützt aber nicht davor, dass jemand unbefugt auf die Daten zugreift. Die Vertraulichkeit wird nur durch Verschlüsselung gewährleistet.
 ---
 
-b. Tool, das es Ihnen erlaubt Netzwerkverkehr zu aufzuzeichnen und zu analysieren (jedoch nicht zu verändern)
+b. Online-Backups sind geeignet, um die Auswirkungen von Verschlüsselungstrojanern zu minimieren.
 ❌ Falsch
 
 **Begründung:** 
-Online-Backups sind oft dauerhaft mit dem System verbunden. Wenn ein Verschlüsselungstrojaner das System befällt, kann er auch auf das Online-Backup zugreifen und es mitverschlüsseln. Dadurch geht das Backup verloren und hilft nicht mehr.
+Online-Backups sind anfällig, wenn sie nicht getrennt vom System gespeichert oder verschlüsselt sind. Ein Trojaner kann sonst auch das Backup befallen.
 
 ---
 
-c. Tool welches Ihnen erlaubt, Man-in-the-middel-Angriffe durchzuführen:
+c. Eine Verschlüsselung von Backups ist dann sinnvoll, wenn die beschriebenen Backupmedien nicht sicher gelagert werden können.
 ✅ Richtig
 
 **Begründung:** 
