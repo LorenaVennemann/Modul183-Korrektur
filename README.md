@@ -251,6 +251,7 @@ a. Dank einer Backup-History kann die Vertraulichkeit der Daten gewährleistet w
 
 **Begründung:** 
 Die Backup-History sorgt nur dafür, dass man frühere Versionen von Daten wiederherstellen kann, sie schützt aber nicht davor, dass jemand unbefugt auf die Daten zugreift. Die Vertraulichkeit wird nur durch Verschlüsselung gewährleistet.
+
 ---
 
 b. Online-Backups sind geeignet, um die Auswirkungen von Verschlüsselungstrojanern zu minimieren.
